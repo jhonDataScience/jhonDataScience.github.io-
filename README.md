@@ -1,2 +1,2 @@
-# CVJonathanlugo.github.io
+# CV Jonathan Lugo
 Curriculum vitae de Jonathan Lugo
