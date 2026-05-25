@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="es"> 
 <head>
-    <title>Jonathan Lugo</title>
+    <title>Jonathan Lugo - Técnico Contable y Fiscal | Experto en Ley Beckham y Tecnología</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jonathan Lugo, Contable experto en soluciones tecnológicas financieras. Transformando datos financieros en decisiones estratégicas.">
+    <meta name="description" content="Jonathan Lugo, Técnico Contable y Fiscal en Madrid. Especialista en la Ley Beckham, nómadas digitales, análisis de datos financieros y automatización de procesos.">
+    <meta name="keywords" content="Jonathan Lugo, Contable, Fiscalidad, Ley Beckham, Nómadas Digitales, SAGE, A3, Excel Avanzado, SQL, Madrid, Contabilidad Analítica">
     <link rel="shortcut icon" href="favicon.ico"> 
+    <link rel="canonical" href="https://jhonDataScience.github.io/">
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jhonDataScience.github.io/">
+    <meta property="og:title" content="Jonathan Lugo - Técnico Contable y Fiscal">
+    <meta property="og:description" content="Asesoría financiera avanzada con integración de datos y automatización en España.">
+    <meta property="og:image" content="profile.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jhonDataScience.github.io/">
+    <meta property="twitter:title" content="Jonathan Lugo - Técnico Contable y Fiscal">
+    <meta property="twitter:description" content="Asesoría financiera avanzada con integración de datos y automatización en España.">
+    <meta property="twitter:image" content="profile.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AccountingService",
+      "name": "Jonathan Lugo - Consultoría Contable y Fiscal",
+      "description": "Especialista en fiscalidad internacional, nómadas digitales (Ley Beckham) y contabilidad analítica en Madrid, España.",
+      "url": "https://jhonDataScience.github.io/",
+      "telephone": "+34642171568",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Madrid",
+        "addressCountry": "ES"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Jonathan Lugo",
+        "jobTitle": "Técnico Contable y Fiscal",
+        "email": "jonathanlugospain@gmail.com"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/jonathanlugo2/",
+        "https://github.com/jhonDataScience"
+      ]
+    }
+    </script>
+
     <!-- FontAwesome JS-->
 	<script defer src="all.min.js"></script>
        
@@ -19,14 +63,33 @@
 <body>	
     
     <header>
+        <div class="scroll-progress-bar" id="progress-bar"></div>
         <div class="container nav-container">
-            <div class="logo">JL<span>.</span></div>
+            <div class="logo" style="display: flex; align-items: center; gap: 6px;">
+                <span>JL</span>
+                <svg class="ai-sparkle" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" fill="url(#sparkle-grad-nav)"/>
+                    <defs>
+                        <linearGradient id="sparkle-grad-nav" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4285f4" />
+                            <stop offset="30%" stop-color="#9b51e0" />
+                            <stop offset="70%" stop-color="#e92754" />
+                            <stop offset="100%" stop-color="#f2994a" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Menú de navegación" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#about">Inicio</a></li>
                 <li><a href="#experience">Experiencia</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#education">Formación</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#contact" class="btn-nav-contact" data-dialog="dialog-contact">Contacto</a></li>
             </ul>
         </div>
     </header>
@@ -34,13 +97,32 @@
     <main>
         <!-- Hero Section -->
         <section id="about" class="hero">
+            <div class="aurora-bg">
+                <div class="aurora-blob blob-1"></div>
+                <div class="aurora-blob blob-2"></div>
+                <div class="aurora-blob blob-3"></div>
+            </div>
             <div class="hero-bg-glow"></div>
             <div class="container hero-content">
                 <div class="hero-text reveal">
-                    <h1>Hola, soy <span class="gradient-text">Jonathan Lugo</span></h1>
+                    <h1 style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px;">
+                        <span>Hola, soy</span> 
+                        <span class="gradient-text">Jonathan Lugo</span>
+                        <svg class="ai-sparkle-hero" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" fill="url(#sparkle-grad-hero)"/>
+                            <defs>
+                                <linearGradient id="sparkle-grad-hero" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#4285f4" />
+                                    <stop offset="30%" stop-color="#9b51e0" />
+                                    <stop offset="70%" stop-color="#e92754" />
+                                    <stop offset="100%" stop-color="#f2994a" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </h1>
                     <p class="subtitle">Transformando datos financieros en decisiones estratégicas. Más de 15 años de experiencia fusionando contabilidad, fiscalidad y excelencia tecnológica.</p>
                     <div class="btn-group">
-                        <a href="#contact" class="btn btn-primary">Hablemos de tu proyecto</a>
+                        <button class="btn btn-primary" data-dialog="dialog-contact">Hablemos de tu proyecto</button>
                         <a href="#experience" class="btn btn-outline">Ver Experiencia</a>
                     </div>
                 </div>
@@ -57,19 +139,19 @@
         <div class="container">
             <div class="stats reveal">
                 <div class="stat-item">
-                    <div class="stat-number">15+</div>
+                    <div class="stat-number" data-target="15" data-suffix="+">0+</div>
                     <div class="stat-label">Años Experiencia</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">5+</div>
+                    <div class="stat-number" data-target="5" data-suffix="+">0+</div>
                     <div class="stat-label">ERPs Dominados</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">100%</div>
+                    <div class="stat-number" data-target="100" data-suffix="%">0%</div>
                     <div class="stat-label">Cumplimiento AEAT</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">360°</div>
+                    <div class="stat-number" data-target="360" data-suffix="°">0°</div>
                     <div class="stat-label">Gestión Integral</div>
                 </div>
             </div>
@@ -92,9 +174,10 @@
                             <div class="timeline-company">Consultoría estratégica y asesoría empresarial - ASIDNE</div>
                             <p class="timeline-desc">Gestión integral de cartera de clientes. Especialista en fiscalidad para nómadas digitales y no residentes. Responsable de una cartera de más de 30 Sociedades y 50 nómadas digitales. Presentación de Impuestos.</p>
                             <div class="badges">
-                                <span class="badge">SAGE</span>
-                                <span class="badge">CEGID</span>
-                                <span class="badge">Bitrix</span>
+                                <span class="badge badge-green">SAGE</span>
+                                <span class="badge badge-green">CEGID</span>
+                                <span class="badge badge-blue">Bitrix</span>
+                                <span class="badge badge-blue">Quantum</span>
                             </div>
                         </div>
                     </div>
@@ -109,11 +192,11 @@
                             <div class="timeline-company">Innogroup Tech, S.L.</div>
                             <p class="timeline-desc">Gestión integral de cartera de clientes. Especialista en fiscalidad para nómadas digitales y no residentes. Presentación de modelos de la AEAT (303, 100, 200, 347, 390, 190, 180), Cuentas Anuales en Registro Mercantil y Proyecciones Financieras.</p>
                             <div class="badges">
-                                <span class="badge">ERP Interno</span>
-                                <span class="badge">A3 Software</span>
-                                <span class="badge">Galac Software</span>
-                                <span class="badge">Notion</span>
-                                <span class="badge">SQL/Cloud</span>
+                                <span class="badge badge-blue">ERP Interno</span>
+                                <span class="badge badge-green">A3 Software</span>
+                                <span class="badge badge-green">Galac Software</span>
+                                <span class="badge badge-blue">Notion</span>
+                                <span class="badge badge-purple">SQL/Cloud</span>
                             </div>
                         </div>
                     </div>
@@ -129,9 +212,9 @@
                             <div class="timeline-company">Aberture Soluciones, S.L.</div>
                             <p class="timeline-desc">Consolidación de Estados Financieros para autónomos y pymes. Cumplimiento de obligaciones fiscales, redacción de informes e interacciones directas con la Agencia Tributaria.</p>
                             <div class="badges">
-                                <span class="badge">A3 Software</span>
-                                <span class="badge">Monitor Informatica</span>
-                                <span class="badge">Golden Soft</span>
+                                <span class="badge badge-green">A3 Software</span>
+                                <span class="badge badge-green">Monitor Informatica</span>
+                                <span class="badge badge-green">Golden Soft</span>
                             </div>
                         </div>
                     </div>
@@ -147,9 +230,9 @@
                             <div class="timeline-company">Oficina Profesional Contable, FP</div>
                             <p class="timeline-desc">15 años liderando servicios de gestoría y contabilidad externa para múltiples sectores (Clínicas, Logística, Retail). Auditoría con efectos de inflación y control de instituciones financieras.</p>
                             <div class="badges">
-                                <span class="badge">Galac CRM</span>
-                                <span class="badge">SQL</span>
-                                <span class="badge">Estrategia</span>
+                                <span class="badge badge-green">Galac CRM</span>
+                                <span class="badge badge-purple">SQL</span>
+                                <span class="badge badge-blue">Estrategia</span>
                             </div>
                         </div>
                     </div>
@@ -165,9 +248,9 @@
                             <div class="timeline-company">Hospital Metropolitano de Maturín</div>
                             <p class="timeline-desc">Inspección ilimitada fiscal y legal. Revisión exhaustiva de operaciones, aprobación de estados financieros en asambleas y rendición de cuentas anuales ante accionistas.</p>
                             <div class="badges">
-                                <span class="badge">SAP Hospital</span>
-                                <span class="badge">SQL</span>
-                                <span class="badge">Auditoría</span>
+                                <span class="badge badge-blue">SAP Hospital</span>
+                                <span class="badge badge-purple">SQL</span>
+                                <span class="badge badge-blue">Auditoría</span>
                             </div>
                         </div>
                     </div>
@@ -183,9 +266,9 @@
                             <div class="timeline-company">Angi Supermercado, C.A.</div>
                             <p class="timeline-desc">Planificación corporativa, gestión de inventarios, optimización de nómina y tesorería. Desarrollo de estrategias comerciales orientadas a la optimización de compras y mermas.</p>
                             <div class="badges">
-                                <span class="badge">A2 Software</span>
-                                <span class="badge">Data Query</span>
-                                <span class="badge">Management</span>
+                                <span class="badge badge-green">A2 Software</span>
+                                <span class="badge badge-purple">Data Query</span>
+                                <span class="badge badge-blue">Management</span>
                             </div>
                         </div>
                     </div>
@@ -201,9 +284,9 @@
                             <div class="timeline-company">Galac Software</div>
                             <p class="timeline-desc">Certificación como experto comercial y operativo en despliegues. Administración de servidores, manejo de BD SQL Server y asesoría microinformática para infraestructura contable.</p>
                             <div class="badges">
-                                <span class="badge">SQL Server</span>
-                                <span class="badge">Linux/Windows Server</span>
-                                <span class="badge">Redes</span>
+                                <span class="badge badge-purple">SQL Server</span>
+                                <span class="badge badge-blue">Linux/Windows Server</span>
+                                <span class="badge badge-blue">Redes</span>
                             </div>
                         </div>
                     </div>
@@ -218,7 +301,7 @@
                 <h2 class="section-title reveal">Habilidades & Ecosistema</h2>
                 <div class="bento-grid">
                     
-                    <div class="bento-card large reveal">
+                    <div class="bento-card large card-blue-purple reveal">
                         <div class="bento-icon"><i class="fas fa-laptop-code"></i></div>
                         <h3 class="bento-title">Ecosistema Contable y Fiscal AEAT</h3>
                         <p style="color: var(--text-secondary); margin-bottom: 20px;">Dominio en herramientas estándar del mercado español para la rápida puesta en marcha y auditoría.</p>
@@ -228,23 +311,23 @@
                             <li class="skill-tag"><i class="fas fa-check-circle"></i> Golden Soft</li>
                             <li class="skill-tag"><i class="fas fa-check-circle"></i> Monitor Informática</li>
                             <li class="skill-tag"><i class="fas fa-check-circle"></i> Sage</li>
-                            <li class="skill-tag"><i class="fas fa-check-circle"></i> Innotaxes</li>
+                            <li class="skill-tag"><i class="fas fa-check-circle"></i> Quantum</li>
                         </ul>
                     </div>
 
-                    <div class="bento-card reveal" style="transition-delay: 0.1s;">
+                    <div class="bento-card card-green-cyan reveal" style="transition-delay: 0.1s;">
                         <div class="bento-icon"><i class="fas fa-database"></i></div>
                         <h3 class="bento-title">Tech & Data</h3>
                         <p style="color: var(--text-secondary); margin-bottom: 15px;">Mentalidad analítica. No sólo ingreso asientos, extraigo insights de negocio.</p>
                         <ul class="skill-list">
-                            <li class="skill-tag">SQL Server</li>
-                            <li class="skill-tag">Power BI</li>
+                            <li class="skill-tag">SQL Server / Access</li>
+                            <li class="skill-tag">Power BI / Excel</li>
                             <li class="skill-tag">Cloud ERPs</li>
-                            <li class="skill-tag">HTML / CSS</li>
+                            <li class="skill-tag">Automatización IA</li>
                         </ul>
                     </div>
 
-                    <div class="bento-card reveal">
+                    <div class="bento-card card-blue-purple reveal">
                         <div class="bento-icon"><i class="fas fa-brain"></i></div>
                         <h3 class="bento-title">Gestión y Liderazgo</h3>
                         <p style="color: var(--text-secondary); margin-bottom: 15px;">Capacidad resolutiva y de análisis crítico frente a desafíos fiscales.</p>
@@ -255,7 +338,34 @@
                         </ul>
                     </div>
 
-                    <div class="bento-card large reveal" style="transition-delay: 0.1s; background: linear-gradient(to right, rgba(0, 242, 254, 0.05), transparent);">
+                    <div class="bento-card large card-green-cyan reveal" style="transition-delay: 0.1s;">
+                        <div class="bento-icon"><i class="fas fa-calculator"></i></div>
+                        <h3 class="bento-title">Simulador de Ahorro Fiscal (Ley Beckham / Nómadas)</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 20px;">Compara visualmente el IRPF progresivo ordinario frente a la tarifa plana del 24% para el régimen de no residentes en España.</p>
+                        <div class="calculator-wrapper">
+                            <div class="calc-inputs">
+                                <label for="income-slider" class="calc-label">Salario Bruto Anual: <span id="income-val" class="highlight">65.000 €</span></label>
+                                <input type="range" id="income-slider" min="20000" max="150000" step="5000" value="65000" class="slider">
+                                <span class="calc-info"><i class="fas fa-info-circle"></i> Aplica 24% fijo hasta 600K € para nómadas y no residentes.</span>
+                            </div>
+                            <div class="calc-results">
+                                <div class="res-box">
+                                    <div class="res-label">Régimen General IRPF</div>
+                                    <div class="res-value" id="tax-common">17.200 €</div>
+                                </div>
+                                <div class="res-box beckham">
+                                    <div class="res-label">Ley Beckham (24%)</div>
+                                    <div class="res-value" id="tax-beckham">15.600 €</div>
+                                </div>
+                                <div class="res-savings">
+                                    <div class="savings-label">Tu Ahorro Anual Estimado</div>
+                                    <div class="savings-value" id="tax-savings">1.600 €</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bento-card large card-rainbow reveal" style="transition-delay: 0.1s;">
                         <div class="bento-icon"><i class="fas fa-bolt"></i></div>
                         <h3 class="bento-title">Ofimática Avanzada</h3>
                         <p style="color: var(--text-secondary); margin-bottom: 15px;">Uso exhaustivo de hojas de cálculo avanzadas y bases de datos para modelos financieros, macros, y automatización en la nube.</p>
@@ -323,7 +433,7 @@
                 
                 <div class="projects-grid">
                     <!-- Project 1: ContaSaw -->
-                    <div class="project-card reveal">
+                    <div class="project-card card-blue-purple reveal">
                         <div class="project-glow"></div>
                         <div class="project-content">
                             <div class="project-header">
@@ -331,12 +441,15 @@
                                 <h3>ContaSaw</h3>
                             </div>
                             <p>Asistente virtual potenciado por IA diseñado para analizar grandes volúmenes de datos contables, detectar anomalías fiscales y auto-completar asientos rutinarios con altísima precisión.</p>
-                            <a href="#" class="btn btn-outline" style="margin-top: 15px; padding: 8px 15px; font-size: 0.85rem;">En Desarrollo</a>
+                            <div class="btn-group-row" style="margin-top: 15px; display: flex; gap: 10px; align-items: center;">
+                                <button class="btn btn-outline btn-dialog-trigger" data-dialog="dialog-contasaw" style="padding: 8px 15px; font-size: 0.85rem;">Ver Detalles</button>
+                                <span class="badge" style="display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; border-color: rgba(255, 189, 46, 0.3); color: #ffbd2e; background: rgba(255, 189, 46, 0.1);">En Desarrollo</span>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Project 2: Snitch Software -->
-                    <div class="project-card reveal" style="transition-delay: 0.2s;">
+                    <div class="project-card card-green-cyan reveal" style="transition-delay: 0.2s;">
                         <div class="project-glow"></div>
                         <div class="project-content">
                             <div class="project-header">
@@ -344,32 +457,32 @@
                                 <h3>Snitch Software</h3>
                             </div>
                             <p>Software antifraude y de cumplimiento tributario que garantiza la inmutabilidad de los registros financieros y facilita auditorías impecables en cumplimiento de la Ley Antifraude de la AEAT.</p>
-                            <a href="https://snitch-soft.vercel.app/login" target="_blank" class="btn btn-primary" style="margin-top: 15px; padding: 8px 15px; font-size: 0.85rem;">Visitar Snitch</a>
+                            <div class="btn-group-row" style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+                                <button class="btn btn-outline btn-dialog-trigger" data-dialog="dialog-snitch" style="padding: 8px 15px; font-size: 0.85rem;">Ver Detalles</button>
+                                <a href="https://snitch-soft.vercel.app/login" target="_blank" class="btn btn-primary" style="padding: 8px 15px; font-size: 0.85rem;">Visitar Snitch</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- AI Animation Showcase -->
+                <!-- AI Terminal Console -->
                 <div class="ai-showcase reveal" style="transition-delay: 0.4s;">
-                    <div class="ai-terminal">
+                    <div class="ai-terminal" id="terminal-console">
                         <div class="terminal-header">
                             <span class="dot red"></span>
                             <span class="dot yellow"></span>
                             <span class="dot green"></span>
-                            <span class="terminal-title">AI Processing Unit - ContaSaw Engine</span>
+                            <span class="terminal-title">JLugo OS - ContaSaw Engine v2.0</span>
                         </div>
-                        <div class="terminal-body">
-                            <div class="ai-line">
-                                <span class="ai-prompt">> </span> Analizando extracto bancario (1.432 registros)... <span class="ai-status processing">[Procesando]</span>
+                        <div class="terminal-body" id="terminal-body">
+                            <div class="terminal-history" id="terminal-history">
+                                <div class="ai-line">Bienvenido al sistema interactivo de Jonathan Lugo.</div>
+                                <div class="ai-line">Escribe <span class="highlight">ayuda</span> para ver los comandos disponibles.</div>
+                                <div class="ai-line">&nbsp;</div>
                             </div>
-                            <div class="ai-line delay-1">
-                                <span class="ai-prompt">> </span> Clasificando gastos e identificando deducciones... <span class="ai-status success">[Completado]</span>
-                            </div>
-                            <div class="ai-line delay-2">
-                                <span class="ai-prompt">> </span> Conciliación con Cuentas Anuales PGC detecta desvío del <span class="highlight">0.00%</span> <i class="fas fa-check-circle success"></i>
-                            </div>
-                            <div class="ai-line delay-3 typing">
-                                <span class="ai-prompt">> </span> Modelos 303 y 130 listos para revisión y presentación. <span class="cursor">_</span>
+                            <div class="terminal-input-line">
+                                <span class="ai-prompt">jonathan@cv:~$ </span>
+                                <input type="text" id="terminal-input" placeholder="Escribe un comando aquí..." autocomplete="off" spellcheck="false" aria-label="Consola de comandos">
                             </div>
                         </div>
                         <div class="ai-overlay-scan"></div>
@@ -385,8 +498,11 @@
         <div class="container">
             <div class="cta-box reveal">
                 <h2>¿Listo para optimizar la contabilidad de tu empresa?</h2>
-                <p>Si buscas un perfil proactivo que integre sólidos conocimientos técnicos, financieros y operativos, estás ante la persona adecuada.</p>
-                <a href="mailto:jonathanlugospain@gmail.com" class="btn btn-primary" style="font-size: 1.2rem; padding: 15px 40px;">Contactar por Correo</a>
+                <p>Si buscas un perfil proactivo que integre sólidos conocimientos técnicos, financieros y operativos, estás ante la persona adecuada. Envía un mensaje y hablemos de tu proyecto.</p>
+                
+                <button class="btn-footer-contact" data-dialog="dialog-contact">
+                    <i class="fas fa-paper-plane" style="margin-right: 4px;"></i> Contactar Ahora
+                </button>
             </div>
             
             <div class="social-links reveal">
@@ -401,6 +517,116 @@
             </div>
         </div>
     </footer>
+
+    <!-- Dialog Modals for Projects -->
+    <dialog id="dialog-contasaw" class="project-dialog">
+        <div class="dialog-wrapper">
+            <button class="dialog-close" data-close-dialog aria-label="Cerrar"><i class="fas fa-times"></i></button>
+            <div class="dialog-header">
+                <div class="project-icon"><i class="fas fa-brain"></i></div>
+                <div>
+                    <h2 style="font-family: 'Sora', sans-serif; font-size: 1.6rem; color: var(--text-primary); margin-bottom: 0;">ContaSaw</h2>
+                    <span class="dialog-subtitle">Asistente Financiero Cognitivo con IA</span>
+                </div>
+            </div>
+            <div class="dialog-body">
+                <p style="margin-bottom: 20px;"><strong>ContaSaw</strong> es un desarrollo orientado a la automatización de procesos financieros mediante Modelos de Lenguaje (LLMs) y agentes inteligentes adaptados al PGC (Plan General de Contabilidad) español.</p>
+                
+                <h3 style="margin-bottom: 12px; font-family: 'Sora', sans-serif; font-size: 1.1rem; color: var(--text-primary);">Características Clave:</h3>
+                <ul style="margin-bottom: 20px; list-style: none;">
+                    <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px; color: var(--text-secondary);"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 4px;"></i> <div><strong>Procesamiento Inteligente:</strong> Extracción automática de facturas y recibos con OCR guiado por IA, conciliándolos al instante con extractos bancarios.</div></li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px; color: var(--text-secondary);"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 4px;"></i> <div><strong>Detección de Anomalías:</strong> Auditoría en tiempo real para alertar sobre posibles errores de imputación contable o desvíos del IVA repercutido/soportado.</div></li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px; color: var(--text-secondary);"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 4px;"></i> <div><strong>Generación de Modelos AEAT:</strong> Pre-confección automatizada de modelos de autoliquidación (IVA 303, retenciones 111/115) con validación previa.</div></li>
+                </ul>
+
+                <h3 style="margin-bottom: 12px; font-family: 'Sora', sans-serif; font-size: 1.1rem; color: var(--text-primary);">Arquitectura y Tecnologías:</h3>
+                <div class="badges" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                    <span class="badge">Python</span>
+                    <span class="badge">OpenAI API</span>
+                    <span class="badge">SQL Server</span>
+                    <span class="badge">Streamlit / Node.js</span>
+                    <span class="badge">Docker</span>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog id="dialog-snitch" class="project-dialog">
+        <div class="dialog-wrapper">
+            <button class="dialog-close" data-close-dialog aria-label="Cerrar"><i class="fas fa-times"></i></button>
+            <div class="dialog-header">
+                <div class="project-icon"><i class="fas fa-shield-alt"></i></div>
+                <div>
+                    <h2 style="font-family: 'Sora', sans-serif; font-size: 1.6rem; color: var(--text-primary); margin-bottom: 0;">Snitch Software</h2>
+                    <span class="dialog-subtitle">Cumplimiento Tributario e Inmutabilidad Financiera</span>
+                </div>
+            </div>
+            <div class="dialog-body">
+                <p style="margin-bottom: 20px;"><strong>Snitch Software</strong> es una plataforma de software diseñada para cumplir con los estándares de la <strong>Ley Antifraude de la AEAT</strong>, asegurando la trazabilidad, inmutabilidad y legibilidad de todos los registros financieros empresariales.</p>
+                
+                <h3 style="margin-bottom: 12px; font-family: 'Sora', sans-serif; font-size: 1.1rem; color: var(--text-primary);">Características Clave:</h3>
+                <ul style="margin-bottom: 20px; list-style: none;">
+                    <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px; color: var(--text-secondary);"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 4px;"></i> <div><strong>Trazabilidad Encadenada:</strong> Cada asiento y registro contable genera un hash SHA-256 encadenado cronológicamente, imposibilitando la alteración a posteriori sin dejar rastro.</div></li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px; color: var(--text-secondary);"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 4px;"></i> <div><strong>Firma Digital:</strong> Integración de certificados digitales oficiales para firmar las operaciones y asegurar su no repudio.</div></li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px; color: var(--text-secondary);"><i class="fas fa-check-circle" style="color: var(--accent-color); margin-top: 4px;"></i> <div><strong>Exportación Homologada:</strong> Generación de informes listos para auditorías físicas y descarga directa en formatos estándar para inspectores de la AEAT.</div></li>
+                </ul>
+
+                <h3 style="margin-bottom: 12px; font-family: 'Sora', sans-serif; font-size: 1.1rem; color: var(--text-primary);">Arquitectura y Tecnologías:</h3>
+                <div class="badges" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                    <span class="badge">PostgreSQL</span>
+                    <span class="badge">Express.js</span>
+                    <span class="badge">React</span>
+                    <span class="badge">Cryptography API</span>
+                    <span class="badge">Vercel</span>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Dialog Modal for Contact Form -->
+    <dialog id="dialog-contact" class="project-dialog">
+        <div class="dialog-wrapper">
+            <button class="dialog-close" data-close-dialog aria-label="Cerrar"><i class="fas fa-times"></i></button>
+            <div class="dialog-header">
+                <div class="project-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                    <h2 style="font-family: 'Sora', sans-serif; font-size: 1.6rem; color: var(--text-primary); margin-bottom: 0;">Contacto</h2>
+                    <span class="dialog-subtitle">Hablemos de tu proyecto</span>
+                </div>
+            </div>
+            <div class="dialog-body">
+                <form id="contact-form" class="contact-form" style="margin-top: 0; padding: 0; background: transparent; border: none; box-shadow: none; max-width: 100%;">
+                    <div class="form-group">
+                        <label for="form-name" class="form-label">Nombre Completo</label>
+                        <input type="text" id="form-name" class="form-control" placeholder="Ej. Juan Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email" class="form-label">Correo Electrónico</label>
+                        <input type="email" id="form-email" class="form-control" placeholder="Ej. juan@empresa.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">¿En qué te puedo ayudar? (Selecciona una opción rápida)</label>
+                        <div class="interest-chips">
+                            <button type="button" class="chip-btn" data-value="Asesoría Contable y Gestión de Pymes">Contabilidad Pymes</button>
+                            <button type="button" class="chip-btn" data-value="Planificación Fiscal y Ley Beckham / Nómadas">Ley Beckham</button>
+                            <button type="button" class="chip-btn" data-value="Auditoría Interna y Cumplimiento AEAT">Auditoría Fiscal</button>
+                            <button type="button" class="chip-btn" data-value="Colaboración en proyecto ContaSaw / Innovación IA">ContaSaw IA</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-subject" class="form-label">Asunto</label>
+                        <input type="text" id="form-subject" class="form-control" placeholder="Ej. Planificación Fiscal Ley Beckham" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message" class="form-label">Mensaje</label>
+                        <textarea id="form-message" class="form-control" rows="4" placeholder="Cuéntame brevemente tus necesidades..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px 0; margin-top: 10px;">Enviar Mensaje</button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </dialog>
 
     <script src="scripts.js"></script>
 </body>
